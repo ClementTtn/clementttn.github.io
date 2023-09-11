@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media_queries.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/090709216e.js" crossorigin="anonymous"></script>
-    <title>Document</title>
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media_queries.css">
+        <link rel="stylesheet" href="css/components.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/090709216e.js" crossorigin="anonymous"></script>
+        <script src="js/galerie.js"></script>
+        <title>Document</title>
+    </head>
 <body>
     <header>
         <nav>
@@ -49,80 +49,58 @@
         </nav>
     </header>
 
-    <section>
-        <h1>Paysages</h1>
-        <h2>Des beaux paysages du monde entier</h2>
-
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam id odio iusto cupiditate, ullam deserunt aut pariatur doloremque natus quam exercitationem vero rerum explicabo minus deleniti delectus provident facilis? Dolor.</p>
-        
-        <img class="img_lac" src="img/lac.jpg" alt="Lac">        
-        <br>
-        <a target="_blank" href="https://img.freepik.com/photos-gratuite/jetee-au-bord-lac-hallstatt-autriche_181624-44201.jpg">Lien de l'image</a>
-
-    </section>
-
-    <section id="criteres">
-        <h2>Pourquoi un paysage est beau ?</h2>
-        <ul>
-            <li>Couleurs</li>
-            <li>Végétation</li>
-            <li>Bâtiments ou non</li>
-        </ul>
-    </section>
-
-    <section id="classement">
-        <h2>Les paysages préférés</h2>
-        <ol>
-            <li>Lacs</li>
-            <li>Montagnes</li>
-            <li>Plages</li>
-        </ol>
-    </section>
-
-    <section id="cartes">
-        <h2>Classement</h2>
-        <h3>Etabli par des experts</h3>
-        <div class="d-grid">
-            <div class="carte1">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/1.jpg" class="card-img-top" alt="1">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
+    <ul class="slides">
+        <input type="radio" name="radio-btn" id="img-1" checked />
+        <li class="slide-container">
+            <div class="slide">
+                <img src="img/1.jpg" />
             </div>
-
-            <div class="carte2">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/2.jpg" class="card-img-top" alt="2">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
+            <div class="nav">
+                <label for="img-4" class="prev">&#x2039;</label>
+                <label for="img-2" class="next">&#x203a;</label>
             </div>
-
-            <div class="carte3">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/3.jpg" class="card-img-top" alt="3">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-2" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="img/2.jpg" />
             </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Nous situer</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d180987.13383859827!2d-0.7508188619548797!3d44.863842647505955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527e8f751ca81%3A0x796386037b397a89!2sBordeaux!5e0!3m2!1sfr!2sfr!4v1694424819684!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-
-    <button data-tf-popup="fzVZwg1j" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=My typeform" data-tf-transitive-search-params data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#0445AF;color:#fff;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Répondez au sondage</button><script src="//embed.typeform.com/next/embed.js"></script>
+            <div class="nav">
+                <label for="img-1" class="prev">&#x2039;</label>
+                <label for="img-3" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-3" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="img/3.jpg" />
+            </div>
+            <div class="nav">
+                <label for="img-2" class="prev">&#x2039;</label>
+                <label for="img-4" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-4" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="img/lac.jpg" />
+            </div>
+            <div class="nav">
+                <label for="img-3" class="prev">&#x2039;</label>
+                <label for="img-1" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <li class="nav-dots">
+          <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+          <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+          <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+          <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+        </li>
+    </ul>
 
     <footer>
         <div class="links">
@@ -146,5 +124,4 @@
         </div>
     </footer>
 </body>
-
 </html>
