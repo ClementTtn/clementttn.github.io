@@ -12,9 +12,16 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
-    background: #FFF3E1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.5);
     margin-bottom: 1.5rem;
     padding: 1rem;
+    border-left: 3px solid grey;
+    border-right: 3px solid grey;
 }
 
 nav ul{
@@ -22,6 +29,10 @@ nav ul{
     align-items: center;
     gap: 1rem;
     list-style: none;
+}
+
+nav a{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav img{
@@ -32,6 +43,10 @@ nav img{
 
 h1{
     color: blue;
+}
+
+section h1{
+    margin-top: 8rem;
 }
 
 a{
@@ -47,6 +62,11 @@ a:hover{
     width: 500px;
     height: 300px;
     object-fit: cover;
+    transition: all 0.5s;
+}
+
+.img_lac:hover{
+    transform: scale(1.5);
 }
 
 section{
